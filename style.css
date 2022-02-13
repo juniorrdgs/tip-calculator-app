@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --activeBG: hsl(172, 67%, 45%);
+    --btnsBG: hsl(183, 100%, 15%);
+    --card: hsl(183, 100%, 15%);
+    --leftText: hsl(186, 14%, 43%);
+    --placeholderText: hsl(184, 14%, 56%);
+    --mainBG: hsl(185, 41%, 84%);
+    --rightText: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --resetBtn: hsl(183,78%,23%);
+    --resetText: rgb(5, 77, 78);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', serif;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--mainBG);
+}
+
+.app-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.left-side {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.bill {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.bill img {
+    height: 27px;
+    padding: 5px;
+    position: absolute;
+    line-height: 30px;
+}
+
+.bill-title {
+    font-size: 16px;
+    color: var(--leftText);
+}
+
+.bill-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Space Mono';
+    color: var(--placeholderText);
+    height: 30px;
+    padding: 5px;
+    background-color: var(--rightText);
+    text-align: right;
+}
+
+.bill-input::placeholder {
+    color: var(--placeholderText);
+}
+
+.bill-input::-webkit-outer-spin-button,
+.bill-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+.tip {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tip-title {
+    color: var(--leftText);
+}
+
+.tip-btns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tip-btn {
+    width: 100px;
+    padding: 10px 30px;
+    margin: 10px 20px 10px 0;
+    border-radius: 7px;
+    background-color: var(--btnsBG);
+    border: 0;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 2px 5px var(--btnsBG);
+}
+
+.btn-custom {
+    width: 100px;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 0;
+    background-color: var(--);
+    color: var(--placeholderText);
+    border-radius: 7px;
+    border: 0;
+    box-shadow: 0 2px 5px var(--btnsBG);
+}
+
+.tip-btn.active,
+.btn-custom.active {
+    background-color: var(--activeBG);
+    color: var(--white);
+}
+
+.people-title {
+    color: var(--leftText);
+}
+
+.people img {
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    line-height: 30px;
+}
+
+.people-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-family: 'Space Mono';
+    color: var(--placeholderText);
+    height: 30px;
+    padding: 5px;
+    background-color: var(--rightText);
+    text-align: right;
+}
+
+.people-input::-webkit-outer-spin-button,
+.people-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+.people-input::placeholder {
+    color: var(--placeholderText);
+}
+
+.right-side {
+    width: 415px;
+    height: 415px;
+    background-color: var(--btnsBG);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.right-side-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tip-amount-title,
+.total-person-title {
+    color: var(--rightText);
+    font-size: 14px;
+}
+
+.tip-amount-desc,
+.total-person-desc {
+    color: var(--placeholderText);
+    font-size: 12px;
+}
+
+.right-side-inputs {
+    margin-bottom: 15px;
+}
+
+.tip-input, 
+.total-input {
+    color: var(--activeBG);
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.reset-btn {
+    background-color: var(--resetBtn);
+    color: var(--resetText);
+}
