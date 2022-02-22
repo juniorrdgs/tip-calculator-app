@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <header>
+    <img src="assets/images/logo.svg" alt="logo" class="logo">
+  </header>
   <main class="container">
-    <img src="images/logo.svg" alt="logo" class="logo">
     <section class="app-area">
       <div class="left-side">
         <div class="bill">
           <h3 class="bill-title">Bill</h3>
           <div class="bill-value">
-            <img src="images/icon-dollar.svg" alt="dollar">
-            <input autofocus type="number" min="0" required class="bill-input" placeholder="0">
-          </div>        
+            <img src="assets/images/icon-dollar.svg" alt="dollar">
+            <input autofocus type="number" min="0" max="99999" required class="bill-input" placeholder="0">
+          </div>
         </div>
         <div class="tip">
           <h3 class="tip-title">Select Tip %</h3>
@@ -40,7 +37,7 @@
         <div class="people">
           <h3 class="people-title">Number of People</h3>
           <div class="people-qty">
-            <img src="images//icon-person.svg" alt="person">
+            <img src="assets/images/icon-person.svg" alt="person">
             <input type="number" min="0" class="people-input" placeholder="0">
           </div>
         </div>
@@ -57,7 +54,7 @@
               <span class="total-person-desc">/ person</span>
             </div>
           </div>
-        
+
           <div class="right-side-inputs">
             <div class="tip-input">$0.00</div>
             <div class="total-input">$0.00</div>
@@ -67,6 +64,7 @@
       </div>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
